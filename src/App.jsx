@@ -653,7 +653,7 @@ import ExplorePage from "./pages/ExplorePage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import RegisterPage from "./pages/RegisterPage.jsx";
 import MapPage from "./pages/MapPage.jsx";
-import CategoryPage from "./pages/CategoryPage.jsx"; // FIX: Filename casing theek ki gayi
+import CategoryPage from "./pages/Categorypage.jsx"; // FIX: Filename casing theek ki gayi
 import ItemDetailsPage from "./pages/ItemDetailsPage.jsx";
 import PublicProfilePage from "./pages/PublicProfilePage.jsx";
 import BlogPage from "./pages/BlogPage.jsx";
