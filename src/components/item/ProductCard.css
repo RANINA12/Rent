@@ -1,0 +1,158 @@
+/* src/components/ProductCard.css */
+
+.flip-card-container {
+    background-color: transparent;
+    width: 100%;
+    height: 420px;
+    perspective: 1200px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-container .flip-card-inner.flipped {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+/* --- FRONT SIDE STYLING --- */
+.flip-card-front .product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.flip-card-front .product-details {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-category {
+    font-size: 0.75rem;
+    color: #6b7280;
+    text-transform: capitalize;
+}
+
+.product-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0.25rem 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-description {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin: 0.5rem 0;
+    height: 60px;
+    overflow: hidden;
+    line-height: 1.25;
+}
+
+.price-section {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #111827;
+}
+
+.price-type {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #4b5563;
+}
+
+.flip-button {
+    background-color: transparent;
+    color: #0d9488; /* Teal Color */
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* --- BACK SIDE STYLING --- */
+.flip-card-back {
+    transform: rotateY(180deg);
+    background-color: #1f2937; /* Dark Background */
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.owner-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 4px solid #0d9488; /* Teal Border */
+    object-fit: cover;
+}
+
+.owner-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.owner-location {
+    font-size: 0.8rem;
+    color: #9ca3af;
+    margin-top: 0.1rem;
+}
+
+.owner-bio {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #d1d5db;
+    margin: 1rem 0;
+}
+
+.profile-button {
+    background-color: #0d9488;
+    color: #ffffff;
+    padding: 0.6rem 1.5rem;
+    border-radius: 9999px; /* Pill shape */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    transition: background-color 0.2s;
+}
+
+.profile-button:hover {
+    background-color: #0f766e;
+}
