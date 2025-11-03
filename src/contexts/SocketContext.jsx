@@ -19,7 +19,7 @@ const SocketProvider = ({ children }) => {
         // Sirf tabhi connect karein jab user logged-in ho
         if (user && user._id) {
             // Apne backend server se connect karein
-            const newSocket = io("http://localhost:5000");
+            const newSocket = io("https://rentbackend-wxa6.onrender.com");
             setSocket(newSocket);
 
             // Backend ko user ki ID bhejein taaki socket aur user link ho sakein
