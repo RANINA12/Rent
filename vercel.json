@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+        {
+            "source": "/api/:path*",
+            "destination": "https://rentbackend-wxa6.onrender.com/api/:path*"
+        }
+    ]
+}

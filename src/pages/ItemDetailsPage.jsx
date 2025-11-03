@@ -44,7 +44,7 @@
 //     return (
 //         <div className="container mx-auto px-4 py-8">
 //             <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-                
+
 //                 {/* --- Left Side: Image Gallery (Takes 3 columns on large screens) --- */}
 //                 <div className="lg:col-span-3">
 //                     <div className="bg-gray-100 rounded-lg overflow-hidden mb-4 shadow-lg">
@@ -72,7 +72,7 @@
 //                     <div className="bg-white p-6 rounded-lg shadow-lg">
 //                         <p className="text-teal-600 font-semibold capitalize">{item.category}</p>
 //                         <h1 className="text-4xl font-bold text-gray-800 mt-1">{item.name}</h1>
-                        
+
 //                         <p className="text-4xl font-bold text-gray-900 my-6">
 //                             ₹{item.price}
 //                             <span className="text-lg font-normal text-gray-500">/{item.listingType === 'rent' ? 'day' : ''}</span>
@@ -100,7 +100,7 @@
 //                     </div>
 //                 </div>
 //             </div>
-            
+
 //             {/* --- Full Description Section --- */}
 //             <div className="mt-16 bg-white p-8 rounded-lg shadow-lg">
 //                 <h2 className="text-2xl font-bold text-gray-800 mb-4">About this item</h2>
@@ -170,7 +170,7 @@
 //         <div className="bg-gray-50 min-h-screen">
 //             <div className="container mx-auto px-4 py-8">
 //                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    
+
 //                     {/* --- Left Side: Image Gallery --- */}
 //                     <div>
 //                         <div className="bg-white rounded-lg overflow-hidden mb-4 shadow-lg">
@@ -197,7 +197,7 @@
 //                     <div>
 //                         <p className="text-teal-600 font-semibold capitalize">{item.category}</p>
 //                         <h1 className="text-4xl font-bold text-gray-800 mt-1">{item.name}</h1>
-                        
+
 //                         <div className="my-6">
 //                             <p className="text-gray-700 leading-relaxed">{item.description}</p>
 //                         </div>
@@ -305,7 +305,7 @@
 //         <div className="bg-gray-50 min-h-screen">
 //             <div className="container mx-auto px-4 py-8">
 //                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    
+
 //                     {/* --- Left Side: Image Gallery --- */}
 //                     <div>
 //                         <div className="bg-white rounded-lg overflow-hidden mb-4 shadow-lg">
@@ -332,7 +332,7 @@
 //                     <div>
 //                         <p className="text-teal-600 font-semibold capitalize">{item.category}</p>
 //                         <h1 className="text-4xl font-bold text-gray-800 mt-1">{item.name}</h1>
-                        
+
 //                         <div className="my-6">
 //                             <p className="text-gray-700 leading-relaxed">{item.description}</p>
 //                         </div>
@@ -412,7 +412,7 @@
 //     const [loading, setLoading] = useState(true);
 //     const [error, setError] = useState('');
 //     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    
+
 //     // Rental Calculator ke liye states
 //     const [startDate, setStartDate] = useState('');
 //     const [endDate, setEndDate] = useState('');
@@ -475,7 +475,7 @@
 //         <div className="bg-gray-50 min-h-screen">
 //             <div className="container mx-auto px-4 py-8">
 //                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-                    
+
 //                     {/* --- Left Side: Image Gallery --- */}
 //                     <div className="lg:col-span-3">
 //                         <div className="bg-white rounded-lg overflow-hidden mb-4 shadow-lg">
@@ -598,7 +598,7 @@
 //     const [loading, setLoading] = useState(true);
 //     const [error, setError] = useState('');
 //     const [mainImage, setMainImage] = useState('');
-    
+
 //     // Rental Calculator ke liye states
 //     const [startDate, setStartDate] = useState('');
 //     const [duration, setDuration] = useState(1);
@@ -630,11 +630,11 @@
 //             if (isNaN(start.getTime())) return;
 
 //             let end = new Date(start);
-            
+
 //             if (durationType === 'days') end.setDate(start.getDate() + parseInt(duration));
 //             else if (durationType === 'months') end.setMonth(start.getMonth() + parseInt(duration));
 //             else if (durationType === 'years') end.setFullYear(start.getFullYear() + parseInt(duration));
-            
+
 //             setEndDate(end.toISOString().split('T')[0]);
 
 //             const diffTime = Math.abs(end - start);
@@ -659,7 +659,7 @@
 //         <div className="bg-gray-50 min-h-screen">
 //             <div className="container mx-auto px-4 py-8">
 //                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-                    
+
 //                     {/* --- Left Side: Image Gallery & Details --- */}
 //                     <div className="lg:col-span-3">
 //                         <div className="bg-white rounded-lg overflow-hidden mb-4 shadow-lg">
@@ -680,7 +680,7 @@
 //                                 </div>
 //                             ))}
 //                         </div>
-                        
+
 //                         {/* --- Naya "Product Specifications" Section --- */}
 //                         <div className="bg-white p-6 rounded-lg shadow-lg">
 //                             <h2 className="text-2xl font-bold text-gray-800 mb-4">Product Specifications</h2>
@@ -785,7 +785,7 @@
 //     const [loading, setLoading] = useState(true);
 //     const [error, setError] = useState('');
 //     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    
+
 //     // Rental Calculator ke liye states
 //     const [startDate, setStartDate] = useState('');
 //     const [duration, setDuration] = useState(1);
@@ -825,11 +825,11 @@
 //             if (isNaN(start.getTime())) return;
 
 //             let end = new Date(start);
-            
+
 //             if (durationType === 'days') end.setDate(start.getDate() + parseInt(duration));
 //             else if (durationType === 'months') end.setMonth(start.getMonth() + parseInt(duration));
 //             else if (durationType === 'years') end.setFullYear(start.getFullYear() + parseInt(duration));
-            
+
 //             setEndDate(end.toISOString().split('T')[0]);
 
 //             const diffTime = Math.abs(end - start);
@@ -849,7 +849,7 @@
 //     const handleCallClick = () => {
 //         alert('To contact the owner, please call our secure helpline at 1800-123-4567. We will connect your call privately without sharing your number.');
 //     };
-    
+
 //     const handleDiscountRequest = () => {
 //         alert('Your request for a discount has been sent to the owner. They will contact you shortly if they accept.');
 //     };
@@ -864,7 +864,7 @@
 //         <div className="bg-gray-50 min-h-screen">
 //             <div className="container mx-auto px-4 py-8">
 //                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-                    
+
 //                     {/* --- Left Side: Image Gallery & Details --- */}
 //                     <div className="lg:col-span-3">
 //                         <div className="bg-white rounded-lg overflow-hidden mb-4 shadow-lg">
@@ -885,7 +885,7 @@
 //                                 </div>
 //                             ))}
 //                         </div>
-                        
+
 //                         {/* --- Product Specifications Section --- */}
 //                         <div className="bg-white p-6 rounded-lg shadow-lg">
 //                             <h2 className="text-2xl font-bold text-gray-800 mb-4">Product Specifications</h2>
@@ -1003,7 +1003,7 @@
 //     const [loading, setLoading] = useState(true);
 //     const [error, setError] = useState('');
 //     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    
+
 //     // Rental Calculator ke liye states
 //     const [startDate, setStartDate] = useState('');
 //     const [duration, setDuration] = useState(1);
@@ -1043,11 +1043,11 @@
 //             if (isNaN(start.getTime())) return;
 
 //             let end = new Date(start);
-            
+
 //             if (durationType === 'days') end.setDate(start.getDate() + parseInt(duration));
 //             else if (durationType === 'months') end.setMonth(start.getMonth() + parseInt(duration));
 //             else if (durationType === 'years') end.setFullYear(start.getFullYear() + parseInt(duration));
-            
+
 //             setEndDate(end.toISOString().split('T')[0]);
 
 //             const diffTime = Math.abs(end - start);
@@ -1067,7 +1067,7 @@
 //     const handleCallClick = () => {
 //         alert('To contact the owner, please call our secure helpline at 1800-123-4567. We will connect your call privately without sharing your number.');
 //     };
-    
+
 //     const handleDiscountRequest = () => {
 //         alert('Your request for a discount has been sent to the owner. They will contact you shortly if they accept.');
 //     };
@@ -1082,7 +1082,7 @@
 //         <div className="bg-gray-50 min-h-screen">
 //             <div className="container mx-auto px-4 py-8">
 //                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-                    
+
 //                     {/* --- Left Side: Image Gallery & Details --- */}
 //                     <div className="lg:col-span-3">
 //                         <div className="bg-white rounded-lg overflow-hidden mb-4 shadow-lg">
@@ -1103,7 +1103,7 @@
 //                                 </div>
 //                             ))}
 //                         </div>
-                        
+
 //                         {/* --- Product Specifications Section --- */}
 //                         <div className="bg-white p-6 rounded-lg shadow-lg">
 //                             <h2 className="text-2xl font-bold text-gray-800 mb-4">Product Specifications</h2>
@@ -1221,7 +1221,7 @@
 //     const [loading, setLoading] = useState(true);
 //     const [error, setError] = useState('');
 //     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    
+
 //     // Rental Calculator ke liye states
 //     const [startDate, setStartDate] = useState('');
 //     const [duration, setDuration] = useState(1);
@@ -1261,11 +1261,11 @@
 //             if (isNaN(start.getTime())) return;
 
 //             let end = new Date(start);
-            
+
 //             if (durationType === 'days') end.setDate(start.getDate() + parseInt(duration));
 //             else if (durationType === 'months') end.setMonth(start.getMonth() + parseInt(duration));
 //             else if (durationType === 'years') end.setFullYear(start.getFullYear() + parseInt(duration));
-            
+
 //             setEndDate(end.toISOString().split('T')[0]);
 
 //             const diffTime = Math.abs(end - start);
@@ -1285,7 +1285,7 @@
 //     const handleCallClick = () => {
 //         alert('To contact the owner, please call our secure helpline at 1800-123-4567. We will connect your call privately without sharing your number.');
 //     };
-    
+
 //     const handleDiscountRequest = () => {
 //         alert('Your request for a discount has been sent to the owner. They will contact you shortly if they accept.');
 //     };
@@ -1300,7 +1300,7 @@
 //         <div className="bg-gray-50 min-h-screen">
 //             <div className="container mx-auto px-4 py-8">
 //                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-                    
+
 //                     {/* --- Left Side: Image Gallery & Details --- */}
 //                     <div className="lg:col-span-3">
 //                         <div className="bg-white rounded-lg overflow-hidden mb-4 shadow-lg">
@@ -1321,7 +1321,7 @@
 //                                 </div>
 //                             ))}
 //                         </div>
-                        
+
 //                         {/* --- Product Specifications Section --- */}
 //                         <div className="bg-white p-6 rounded-lg shadow-lg">
 //                             <h2 className="text-2xl font-bold text-gray-800 mb-4">Product Specifications</h2>
@@ -1438,7 +1438,7 @@
 //     const [loading, setLoading] = useState(true);
 //     const [error, setError] = useState('');
 //     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    
+
 //     // Rental Calculator ke liye states
 //     const [startDate, setStartDate] = useState('');
 //     const [duration, setDuration] = useState(1);
@@ -1478,11 +1478,11 @@
 //             if (isNaN(start.getTime())) return;
 
 //             let end = new Date(start);
-            
+
 //             if (durationType === 'days') end.setDate(start.getDate() + parseInt(duration));
 //             else if (durationType === 'months') end.setMonth(start.getMonth() + parseInt(duration));
 //             else if (durationType === 'years') end.setFullYear(start.getFullYear() + parseInt(duration));
-            
+
 //             setEndDate(end.toISOString().split('T')[0]);
 
 //             const diffTime = Math.abs(end - start);
@@ -1502,7 +1502,7 @@
 //     const handleCallClick = () => {
 //         alert('To contact the owner, please call our secure helpline at 1800-123-4567. We will connect your call privately without sharing your number.');
 //     };
-    
+
 //     const handleDiscountRequest = () => {
 //         alert('Your request for a discount has been sent to the owner. They will contact you shortly if they accept.');
 //     };
@@ -1517,7 +1517,7 @@
 //         <div className="bg-gray-50 min-h-screen">
 //             <div className="container mx-auto px-4 py-8">
 //                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-                    
+
 //                     {/* --- Left Side: Image Gallery & Details --- */}
 //                     <div className="lg:col-span-3">
 //                         <div className="bg-white rounded-lg overflow-hidden mb-4 shadow-lg">
@@ -1538,7 +1538,7 @@
 //                                 </div>
 //                             ))}
 //                         </div>
-                        
+
 //                         {/* --- Product Specifications Section --- */}
 //                         <div className="bg-white p-6 rounded-lg shadow-lg">
 //                             <h2 className="text-2xl font-bold text-gray-800 mb-4">Product Specifications</h2>
@@ -1662,7 +1662,7 @@
 //     const [loading, setLoading] = useState(true);
 //     const [error, setError] = useState('');
 //     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    
+
 //     // Rental Calculator ke liye states
 //     const [startDate, setStartDate] = useState('');
 //     const [duration, setDuration] = useState(1);
@@ -1702,11 +1702,11 @@
 //             if (isNaN(start.getTime())) return;
 
 //             let end = new Date(start);
-            
+
 //             if (durationType === 'days') end.setDate(start.getDate() + parseInt(duration));
 //             else if (durationType === 'months') end.setMonth(start.getMonth() + parseInt(duration));
 //             else if (durationType === 'years') end.setFullYear(start.getFullYear() + parseInt(duration));
-            
+
 //             setEndDate(end.toISOString().split('T')[0]);
 
 //             const diffTime = Math.abs(end - start);
@@ -1754,7 +1754,7 @@
 //         <div className="bg-gray-50 min-h-screen">
 //             <div className="container mx-auto px-4 py-8">
 //                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-                    
+
 //                     {/* --- Left Side: Image Gallery & Details --- */}
 //                     <div className="lg:col-span-3">
 //                         <div className="bg-white rounded-lg overflow-hidden mb-4 shadow-lg">
@@ -1886,7 +1886,7 @@
 //     const [loading, setLoading] = useState(true);
 //     const [error, setError] = useState('');
 //     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    
+
 //     // State for the Rental Calculator
 //     const [startDate, setStartDate] = useState('');
 //     const [duration, setDuration] = useState(1);
@@ -1929,12 +1929,12 @@
 //             if (isNaN(start.getTime())) return; // Invalid date check
 
 //             let end = new Date(start);
-            
+
 //             // Calculate end date based on duration type
 //             if (durationType === 'days') end.setDate(start.getDate() + parseInt(duration));
 //             else if (durationType === 'months') end.setMonth(start.getMonth() + parseInt(duration));
 //             else if (durationType === 'years') end.setFullYear(start.getFullYear() + parseInt(duration));
-            
+
 //             setEndDate(end.toISOString().split('T')[0]);
 
 //             // Calculate total price based on the number of days
@@ -1985,7 +1985,7 @@
 //         <div className="bg-gray-50 min-h-screen">
 //             <div className="container mx-auto px-4 py-8">
 //                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-                    
+
 //                     {/* --- Left Side: Image Gallery & Details --- */}
 //                     <div className="lg:col-span-3">
 //                         <div className="bg-white rounded-lg overflow-hidden mb-4 shadow-lg">
@@ -2223,7 +2223,7 @@
 //         <div className="bg-gray-50 min-h-screen">
 //             <div className="container mx-auto px-4 py-8">
 //                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-                    
+
 //                     {/* --- Left Side: Image, Specs, and Reviews --- */}
 //                     <div className="lg:col-span-3 space-y-8">
 //                         {/* Image Gallery */}
@@ -2363,7 +2363,7 @@
 //     const [loading, setLoading] = useState(true);
 //     const [error, setError] = useState('');
 //     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    
+
 //     // Rental Calculator State
 //     const [startDate, setStartDate] = useState('');
 //     const [duration, setDuration] = useState(1);
@@ -2398,7 +2398,7 @@
 //             let end = new Date(start);
 //             if (durationType === 'days') end.setDate(start.getDate() + parseInt(duration));
 //             else if (durationType === 'months') end.setMonth(start.getMonth() + parseInt(duration));
-            
+
 //             setEndDate(end.toISOString().split('T')[0]);
 //             const diffTime = Math.abs(end - start);
 //             const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)) || 1;
@@ -2438,7 +2438,7 @@
 //         <div className="bg-gray-50 min-h-screen">
 //             <div className="container mx-auto px-4 py-8">
 //                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-                    
+
 //                     {/* --- Left Column: Images, Specs, Reviews --- */}
 //                     <div className="lg:col-span-3 space-y-8">
 //                         {/* Image Gallery */}
@@ -2579,7 +2579,7 @@
 //     const [loading, setLoading] = useState(true);
 //     const [error, setError] = useState('');
 //     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    
+
 //     // Rental Calculator State
 //     const [startDate, setStartDate] = useState('');
 //     const [duration, setDuration] = useState(1);
@@ -2618,7 +2618,7 @@
 //             let end = new Date(start);
 //             if (durationType === 'days') end.setDate(start.getDate() + parseInt(duration, 10));
 //             else if (durationType === 'months') end.setMonth(start.getMonth() + parseInt(duration, 10));
-            
+
 //             setEndDate(end.toISOString().split('T')[0]);
 //             const diffTime = Math.abs(end - start);
 //             const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)) || 1;
@@ -2650,7 +2650,7 @@
 
 //     // --- Loading and Error States ---
 //     if (loading) return <div className="flex justify-center items-center h-screen"><Spinner /></div>;
-    
+
 //     if (error) return (
 //         <div className="flex justify-center items-center h-[50vh]">
 //             <p className="text-center text-red-500">{error}</p>
@@ -2668,7 +2668,7 @@
 //         <div className="bg-gray-50 min-h-screen">
 //             <div className="container mx-auto px-4 py-8">
 //                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-                    
+
 //                     {/* --- Left Column: Images, Specs, Reviews --- */}
 //                     <div className="lg:col-span-3 space-y-8">
 //                         {/* Image Gallery */}
@@ -2813,7 +2813,7 @@
 //     const [loading, setLoading] = useState(true);
 //     const [error, setError] = useState('');
 //     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    
+
 //     // Rental Calculator State
 //     const [startDate, setStartDate] = useState('');
 //     const [duration, setDuration] = useState(1);
@@ -2858,7 +2858,7 @@
 //             let end = new Date(start);
 //             if (durationType === 'days') end.setDate(start.getDate() + parseInt(duration, 10));
 //             else if (durationType === 'months') end.setMonth(start.getMonth() + parseInt(duration, 10));
-            
+
 //             setEndDate(end.toISOString().split('T')[0]);
 //             const diffTime = Math.abs(end - start);
 //             const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)) || 1;
@@ -2890,7 +2890,7 @@
 
 //     // --- Loading and Error States ---
 //     if (loading) return <div className="flex justify-center items-center h-screen"><Spinner /></div>;
-    
+
 //     if (error) return (
 //         <div className="flex justify-center items-center h-[50vh]">
 //             <p className="text-center text-red-500 text-lg">{error}</p>
@@ -2902,7 +2902,7 @@
 //             <p className="text-center mt-10 text-gray-600">Item not found.</p>
 //         </div>
 //     );
-    
+
 //     // --- Safely access nested data ---
 //     const owner = item.owner || {};
 //     const ownerAddress = owner.address || {};
@@ -2912,7 +2912,7 @@
 //         <div className="bg-gray-50 min-h-screen">
 //             <div className="container mx-auto px-4 py-8">
 //                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-                    
+
 //                     {/* --- Left Column: Images, Specs, Reviews --- */}
 //                     <div className="lg:col-span-3 space-y-8">
 //                         {/* Image Gallery */}
@@ -3062,7 +3062,7 @@
 //     const [loading, setLoading] = useState(true);
 //     const [error, setError] = useState('');
 //     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    
+
 //     // Rental Calculator ka State
 //     const [startDate, setStartDate] = useState('');
 //     const [duration, setDuration] = useState(1);
@@ -3106,7 +3106,7 @@
 //             let end = new Date(start);
 //             if (durationType === 'days') end.setDate(start.getDate() + parseInt(duration, 10));
 //             else if (durationType === 'months') end.setMonth(start.getMonth() + parseInt(duration, 10));
-            
+
 //             setEndDate(end.toISOString().split('T')[0]);
 //             const diffTime = Math.abs(end - start);
 //             const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)) || 1;
@@ -3138,7 +3138,7 @@
 
 //     // --- Loading aur Error States ---
 //     if (loading) return <div className="flex justify-center items-center h-screen"><Spinner /></div>;
-    
+
 //     if (error) return (
 //         <div className="flex justify-center items-center h-[50vh]">
 //             <p className="text-center text-red-500 text-lg">{error}</p>
@@ -3150,7 +3150,7 @@
 //             <p className="text-center mt-10 text-gray-600">Item nahi mila.</p>
 //         </div>
 //     );
-    
+
 //     // --- Data ko surakshit access karne ke liye variables ---
 //     const owner = item.user || {};
 //     const ownerAddress = owner.address || {};
@@ -3164,7 +3164,7 @@
 //         <div className="bg-gray-50 min-h-screen">
 //             <div className="container mx-auto px-4 py-8">
 //                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-                    
+
 //                     {/* --- Left Column: Images, Specs, Reviews --- */}
 //                     <div className="lg:col-span-3 space-y-8">
 //                         {/* Image Gallery */}
@@ -3303,7 +3303,7 @@
 
 // const ItemDetailsPage = () => {
 //     // --- Hooks aur State Management ---
-    
+
 //     // YAHAN BADLAV KIYA GAYA HAI -------------------------------->
 //     // URL se ':id' parameter ko nikal kar 'itemId' variable mein daala gaya hai
 //     const { id: itemId } = useParams(); 
@@ -3317,7 +3317,7 @@
 //     const [loading, setLoading] = useState(true);
 //     const [error, setError] = useState('');
 //     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    
+
 //     // Rental Calculator ka State
 //     const [startDate, setStartDate] = useState('');
 //     const [duration, setDuration] = useState(1);
@@ -3361,7 +3361,7 @@
 //             let end = new Date(start);
 //             if (durationType === 'days') end.setDate(start.getDate() + parseInt(duration, 10));
 //             else if (durationType === 'months') end.setMonth(start.getMonth() + parseInt(duration, 10));
-            
+
 //             setEndDate(end.toISOString().split('T')[0]);
 //             const diffTime = Math.abs(end - start);
 //             const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)) || 1;
@@ -3393,7 +3393,7 @@
 
 //     // --- Loading aur Error States ---
 //     if (loading) return <div className="flex justify-center items-center h-screen"><Spinner /></div>;
-    
+
 //     if (error) return (
 //         <div className="flex justify-center items-center h-[50vh]">
 //             <p className="text-center text-red-500 text-lg">{error}</p>
@@ -3405,7 +3405,7 @@
 //             <p className="text-center mt-10 text-gray-600">Item nahi mila.</p>
 //         </div>
 //     );
-    
+
 //     // --- Data ko surakshit access karne ke liye variables ---
 //     const owner = item.user || {};
 //     const ownerAddress = owner.address || {};
@@ -3419,7 +3419,7 @@
 //         <div className="bg-gray-50 min-h-screen">
 //             <div className="container mx-auto px-4 py-8">
 //                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-                    
+
 //                     {/* --- Left Column: Images, Specs, Reviews --- */}
 //                     <div className="lg:col-span-3 space-y-8">
 //                         {/* Image Gallery */}
@@ -3567,7 +3567,7 @@
 //     const [loading, setLoading] = useState(true);
 //     const [error, setError] = useState('');
 //     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    
+
 //     // Rental Calculator ka State
 //     const [startDate, setStartDate] = useState('');
 //     const [duration, setDuration] = useState(1);
@@ -3617,9 +3617,9 @@
 //             } else if (durationType === 'years') {
 //                 end.setFullYear(start.getFullYear() + parseInt(duration, 10));
 //             }
-            
+
 //             setEndDate(end.toISOString().split('T')[0]);
-            
+
 //             const diffTime = Math.abs(end - start);
 //             const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)) || 1;
 //             setTotalPrice(diffDays * item.pricePerDay);
@@ -3650,7 +3650,7 @@
 
 //     // --- Loading aur Error States ---
 //     if (loading) return <div className="flex justify-center items-center h-screen"><Spinner /></div>;
-    
+
 //     if (error) return (
 //         <div className="flex justify-center items-center h-[50vh]">
 //             <p className="text-center text-red-500 text-lg">{error}</p>
@@ -3662,7 +3662,7 @@
 //             <p className="text-center mt-10 text-gray-600">Item nahi mila.</p>
 //         </div>
 //     );
-    
+
 //     // --- Data ko surakshit access karne ke liye variables ---
 //     const owner = item.user || {};
 //     const ownerAddress = owner.address || {};
@@ -3676,7 +3676,7 @@
 //         <div className="bg-gray-50 min-h-screen">
 //             <div className="container mx-auto px-4 py-8">
 //                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-                    
+
 //                     {/* --- Left Column: Images, Specs, Reviews --- */}
 //                     <div className="lg:col-span-3 space-y-8">
 //                         {/* Image Gallery */}
@@ -3922,13 +3922,13 @@ const ItemDetailsPage = () => {
         <div className="bg-gray-50 min-h-screen">
             <div className="container mx-auto px-4 py-8">
                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-                    
+
                     {/* --- Left Side: Image, Specs, and Reviews --- */}
                     <div className="lg:col-span-3 space-y-8">
                         {/* Image Gallery */}
                         <div>
                             <div className="bg-white rounded-lg overflow-hidden mb-4 shadow-lg"><img src={mainImage || 'https://placehold.co/800x600/E2E8F0/4A5568?text=Image'} alt={item.name} className="w-full h-[500px] object-cover" /></div>
-                            <div className="flex space-x-2">{item.images.map((img, index) => (<div key={index} className={`w-24 h-24 rounded-md overflow-hidden cursor-pointer border-2 transition-all ${currentImageIndex === index ? 'border-teal-500 scale-110' : 'border-transparent hover:border-teal-300'}`} onClick={() => setCurrentImageIndex(index)}><img src={img.url} alt={`${item.name} thumbnail ${index+1}`} className="w-full h-full object-cover" /></div>))}</div>
+                            <div className="flex space-x-2">{item.images.map((img, index) => (<div key={index} className={`w-24 h-24 rounded-md overflow-hidden cursor-pointer border-2 transition-all ${currentImageIndex === index ? 'border-teal-500 scale-110' : 'border-transparent hover:border-teal-300'}`} onClick={() => setCurrentImageIndex(index)}><img src={img.url} alt={`${item.name} thumbnail ${index + 1}`} className="w-full h-full object-cover" /></div>))}</div>
                         </div>
 
                         {/* Product Specifications */}
@@ -3988,7 +3988,7 @@ const ItemDetailsPage = () => {
                                 <>
                                     <h3 className="font-bold text-lg mb-4 text-gray-700">Select Rental Period</h3>
                                     <div className="grid grid-cols-1 gap-4">
-                                        <div><label className="text-sm font-medium">Start Date</label><input type="date" value={startDate} onChange={e => setStartDate(e.target.value)} className="w-full p-2 border rounded-md mt-1"/></div>
+                                        <div><label className="text-sm font-medium">Start Date</label><input type="date" value={startDate} onChange={e => setStartDate(e.target.value)} className="w-full p-2 border rounded-md mt-1" /></div>
                                         <div><label className="text-sm font-medium">Duration</label><div className="flex mt-1"><input type="number" value={duration} onChange={e => setDuration(e.target.value)} className="w-1/2 p-2 border rounded-l-md" min="1" /><select value={durationType} onChange={e => setDurationType(e.target.value)} className="w-1/2 p-2 border-t border-b border-r rounded-r-md bg-gray-100"><option value="days">Days</option><option value="months">Months</option><option value="years">Years</option></select></div></div>
                                         <div><label className="text-sm font-medium">End Date (Auto-calculated)</label><input type="date" value={endDate} className="w-full p-2 border rounded-md mt-1 bg-gray-200" readOnly /></div>
                                     </div>
@@ -4015,7 +4015,7 @@ const ItemDetailsPage = () => {
                             </Link>
                             <div className="border-t my-4"></div>
                             <div className="space-y-3">
-                                {item.user.verification?.status === 'verified' ? ( <FeatureIcon icon="✔️" text="KYC Verified Owner" /> ) : ( <FeatureIcon icon="⏳" text="KYC Pending" /> )}
+                                {item.user.verification?.status === 'verified' ? (<FeatureIcon icon="✔️" text="KYC Verified Owner" />) : (<FeatureIcon icon="⏳" text="KYC Pending" />)}
                                 <FeatureIcon icon="📞" text={maskPhoneNumber(item.user.phone)} onClick={handleCallClick} />
                                 <FeatureIcon icon="📍" text={`${item.user.address.city}, ${item.user.address.state}`} />
                             </div>
